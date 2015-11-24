@@ -1,0 +1,137 @@
+html { font-family: 'Ubuntu', sans-serif !important; }
+body { font-family: 'Ubuntu', sans-serif !important; }
+
+header .intro-text {
+  padding-top: 200px;
+  padding-bottom: 180px; 
+  color: #FFF; 
+}
+header .intro-text .intro-lead-in {
+  font-family: "Open Sans",sans-serif;
+  font-size: 30px;
+  line-height: 25px;
+  text-transform: uppercase;
+  /*margin: 50px 0px 0px;*/
+}
+header .intro-text .intro-heading {
+  margin-bottom: 10px;
+  font-family: "Roboto",sans-serif;
+  font-size: 40px;
+  line-height: 65px;
+  text-transform: uppercase;
+}
+header .intro-text p.intro-sub {
+  font-size: 14px;
+  text-transform: none;
+  font-weight: 300;
+  /*margin-top: 20px;*/
+}
+header .intro-text p {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Lato",sans-serif;
+}
+.intro-text hr.hrl {
+  border-color: #989999;
+  width: 50%;
+  margin: 0px;
+  border-width: 2px;
+}
+hr {
+  border-color: transparent;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+
+.section-title {
+  text-align: center !important;
+  font-family: 'Days One', sans-serif;
+  font-size: 45px !important;
+  font-weight: 900;
+}
+
+.section-sub-title {
+  font-size: 30px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* === navbar === */
+.navbar-custom .navbar-nav > li > a {
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: 17px !important;
+  font-weight: bold !important;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+
+/*.navbar-solid {
+  box-shadow: 0px 4px 8px #CCC;
+}*/
+
+
+/* drupal error message */
+.section {
+  padding: 10px 0px !important;
+}
+
+/* drupal user login form */
+#user-login {
+  text-align: left;
+}
+
+/* for bootstrap tab */
+.nav-tabs > li {
+  left: 29%;
+}
+
+/* event schedule section css */
+.event-schedule-header-tab {
+  font-family: 'Orbitron', sans-serif !important;
+}
+
+/* call for speakers section css */
+.cfs-para {
+  color: #ffffff;
+}
+.cfs-button {
+
+}
+
+/* speaker css */
+.speaker-img {
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  /*border-radius: 3000px;*/
+}
+
+/* sponsors section css */
+
+/* pre footer section css */
+.pre-footer {
+  background-color: #b8c8d7;
+}
+
+/* site footer */
+.site-footer {
+  padding: 15px 0px !important;
+}
+
+.site-footer .site-info {
+  font-size: 13px;
+  padding-top: 10px;
+  font-family: 'Orbitron', sans-serif !important;
+  font-weight: 100;
+}
+
+/* drupal blocks */
+h2 {
+  font-family: 'Orbitron', sans-serif !important;
+}

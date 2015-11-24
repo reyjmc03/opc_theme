@@ -1,0 +1,78 @@
+
+; ###########################################################
+; # Theme Information
+; ###########################################################
+name = OWASP APPSEC CONFERENCE THEME
+description = A customized Owasp Appsec Conference Philippines Web Template theme.
+package = Core
+version = VERSION
+core = 7.x
+
+; ###########################################################
+; # Stylesheets
+; ###########################################################
+stylesheets[all][] = bower_components/bootstrap/dist/css/bootstrap.css
+stylesheets[all][] = bower_components/ionicons/css/ionicons.min.css
+stylesheets[all][] = assets/css/alter.css
+stylesheets[all][] = assets/css/main.css
+stylesheets[all][] = assets/css/animate.css
+stylesheets[all][] = assets/css/admin-module.css
+stylesheets[all][] = assets/css/full-slider.css
+;stylesheets[print][] = css/print.css
+
+; ###########################################################
+; # Regions
+; ###########################################################
+regions[header] = Header
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[highlighted] = Highlighted
+
+regions[featured] = Featured
+regions[content] = Content
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+
+regions[triptych_first] = Triptych first
+regions[triptych_middle] = Triptych middle
+regions[triptych_last] = Triptych last
+
+regions[footer_firstcolumn] = Footer first column
+regions[footer_secondcolumn] = Footer second column
+regions[footer_thirdcolumn] = Footer third column
+regions[footer_fourthcolumn] = Footer fourth column
+
+regions[sp_footer_first_col] 	= Single Page Footer First Column
+regions[sp_footer_second_col] = Single Page Footer Second Column
+regions[sp_footer_third_col] 	= Single Page Footer Third Column
+regions[sp_footer_fourth_col] = Single Page Footer Fourth Column
+
+
+regions[footer] = Footer
+
+; ###########################################################
+; # Settings
+; ###########################################################
+; header, agenda, registration, call for speakers, schedule, location, faq, speakers
+settings[show _header_intro] = 1
+settings[show_agenda_section] = 1
+settings[show_registration_section] = 1
+settings[show_schedule_section] = 1
+settings[show_location_section] = 1
+settings[show_faq_section] = 1
+settings[show_cfs_section] = 1
+settings[show_speakers_section] = 1
+settings[show_sponsorship_section] = 1
+
+
+; settings['show_social_media'] = 1
+;settings['show_twit'] = 1
+;settings['show_fb'] = 1
+;settings['show_li'] = 1
+;settings['show_gplus'] = 1
+
+settings[show_footer_section] = 1
+settings[show_theme_credit] = 0
+
+settings[shortcut_module_link] = 0

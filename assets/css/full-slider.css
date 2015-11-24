@@ -1,0 +1,114 @@
+/*!
+ * Start Bootstrap - Full Slider HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+          transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*html,
+body {
+    height: 100%;
+}*/
+
+html, 
+body, 
+.carousel, 
+.carousel-inner, 
+.carousel-inner .item {
+    height: 100%;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.overlay { 
+  /*background: red;*/
+  color:#fff;
+  position:absolute;
+  z-index:12;
+  top:30%;
+  left:0;
+  width:100%;
+  text-align:center;
+}
+
+.overlay h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #FFF;
+}
+
+.overlay p {
+    font-size: 16px;
+}
+
+a.btn-register {
+    background: rgba(255, 255, 255, 0.2) none repeat scroll 0% 0%;
+    display: block;
+    text-transform: uppercase;
+    width: 150px;
+    border: 1px solid #FFF;
+    padding: 5px 0px;
+    margin: 10px auto;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFF !important;
+}
+
+.doverlay {
+    background: transparent url("images/overlay.png") repeat scroll 0% 0%;
+    /*background: red !important;*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 100;
+}
+
+footer {
+    margin: 50px 0;
+}
