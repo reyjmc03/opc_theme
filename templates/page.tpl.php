@@ -78,11 +78,9 @@
           <div class="animated pulse">
             <div class="site-branding">
               <?php if ($logo): ?>
-              <div class="img-responsive">
                 <a class="logo" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
                   <img class="img-responsive" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
                 </a>
-              </div>
               <?php endif; ?>
             </div>
           </div>

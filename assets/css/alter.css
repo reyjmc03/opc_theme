@@ -55,6 +55,9 @@ hr {
   font-family: 'Days One', sans-serif;
   font-size: 45px !important;
   font-weight: 900;
+  /*text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);*/
 }
 
 .section-sub-title {
@@ -134,4 +137,36 @@ hr {
 /* drupal blocks */
 h2 {
   font-family: 'Orbitron', sans-serif !important;
+}
+
+
+/* for website responsive */
+@media (min-width: 320px) {
+
+}
+
+@media (min-width: 480px) {
+
+}
+
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: 768px) {
+  .site-branding {
+    margin-left: 150px;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    background: red;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-branding {
+    margin-left: 500px;
+  }
 }
