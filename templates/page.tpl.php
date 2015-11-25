@@ -129,6 +129,8 @@
                 <li><a data-scroll href="#sponsors">Sponsors</a></li>
               <?php endif; ?>
 
+              <li><a data-scroll href="">About</a></li>
+
                 <!-- <li><a data-scroll href="#partner">Partner</a></li> -->
                 <!-- <li><a data-scroll href="#photos">Photos</a></li> -->
             </ul>
@@ -140,7 +142,7 @@
                   'attributes' => array(
                     'id' => 'main-menu-links',
                     'class' => array('nav navbar-nav', 'navbar-right'),
-                  ),
+                  ), 
                   'heading' => array(
                     'text' => t('Main menu'),
                     'level' => 'h2',
@@ -191,7 +193,6 @@
         <hr>
         <div class="row btn-wrap" style="line-height: 60px;">
             <div class="col-md-2 col-sm-3 col-xs-12">
-              
             </div>
             <?php if (theme_get_setting('show_faq_section')): ?>
               <div class="col-md-2 col-sm-6 col-xs-12">
@@ -206,14 +207,14 @@
   
   <header id="myCarousel" class="carousel slide carousel-fade">
     <!-- Indicators -->
-    <ol class="carousel-indicators">
+   <!--  <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
         <li data-target="#myCarousel" data-slide-to="3"></li>
         <li data-target="#myCarousel" data-slide-to="4"></li>
         <li data-target="#myCarousel" data-slide-to="5"></li>
-    </ol>
+    </ol> -->
 
     <!-- Wrapper for Slides -->
     <div class="carousel-inner">
@@ -754,8 +755,10 @@
         </div>
         <div class="container">
           <ul class="nav nav-tabs" role="tablist">
-            <li class="active"><a data-toggle="tab" href="#day1"><h4 class="event-schedule-header-tab">DAY 1 (March 03, 2016)</h4></a></li>
-            <li><a data-toggle="tab" href="#day2"><h4 class="event-schedule-header-tab">DAY 2 (March 04, 2016)</h4></a></li>
+            <li class="active"><a data-toggle="tab" href="#day1"><h4 class="event-schedule-header-tab">DAY 1</h4></a></li>
+            <li><a data-toggle="tab" href="#day2"><h4 class="event-schedule-header-tab">DAY 2</h4></a></li>
+            <li><a data-toggle="tab" href="#day3"><h4 class="event-schedule-header-tab">DAY 3</h4></a></li>
+            <li><a data-toggle="tab" href="#day3"><h4 class="event-schedule-header-tab">DAY 4</h4></a></li>
           </ul>
           <div class="tab-content">
             <?php # begin schedule > day 1 ?>
