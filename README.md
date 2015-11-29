@@ -27,3 +27,7 @@
 ***27 November 2015 14:39***
 - fixing header navigation
 
+***29 November 2015 09:13***
+- fixing theme-settings.php
+- adding image upload in animate slideshow
+

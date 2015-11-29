@@ -124,6 +124,32 @@ function opc_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     ),
   );
 
+  # slide no. 4
+  # ______________________
+  $form['opc_theme']['header']['slideshow']['slide4_image'] = array(
+    '#type' => 'managed_file',
+    '#title' => t('Custom slide 4 image'),
+    '#default_value' => theme_get_setting('slide4_image'),
+    '#description' => t('.jpg or .jpeg are allowed file extension only.'),
+    '#upload_location' => 'public://theme/',
+    '#upload_validators' => array(
+      'file_validate_extentions' => array('jpg jpeg'),
+    ),
+  );
+
+  # slide no. 5
+  # ______________________
+  $form['opc_theme']['header']['slideshow']['slide5_image'] = array(
+    '#type' => 'managed_file',
+    '#title' => t('Custom slide 5 image'),
+    '#default_value' => theme_get_setting('slide5_image'),
+    '#description' => t('.jpg or .jpeg are allowed file extension only.'),
+    '#upload_location' => 'public://theme/',
+    '#upload_validators' => array(
+      'file_validate_extentions' => array('jpg jpeg'),
+    ),
+  );
+
   # ### end slider image information ###
 
   // $form['opc_theme'][]

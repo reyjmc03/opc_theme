@@ -214,33 +214,46 @@
         <li data-target="#myCarousel" data-slide-to="3"></li>
         <li data-target="#myCarousel" data-slide-to="4"></li>
         <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
     </ol> -->
 
     <!-- Wrapper for Slides -->
     <div class="carousel-inner">
         <div class="item active">
-            <!-- Set the first background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/backgrounds/header.jpg'; ?>');"></div>
+          <!-- Set the first background image using inline CSS below. -->
+          <div class="fill" style="background-image:url('<?php print base_path() 
+            . drupal_get_path('theme', 'opc_theme') . '/assets/images/backgrounds/header.jpg'; ?>');">
+          </div>
         </div>
         <div class="item">
-            <!-- Set the second background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/backgrounds/header-2.jpg'; ?>');"></div>
+          <!-- Set the second background image using inline CSS below. -->
+          <div class="fill" style="background-image:url('<?php print base_path() 
+            . drupal_get_path('theme', 'opc_theme') .  '/assets/images/backgrounds/header-2.jpg'; ?>');">
+          </div>
         </div>
         <div class="item">
-            <!-- Set the third background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/backgrounds/header-3.jpg'; ?>');"></div>
+          <!-- Set the third background image using inline CSS below. -->
+          <div class="fill" style="background-image:url('<?php print base_path() 
+            . drupal_get_path('theme', 'opc_theme') .  '/assets/images/backgrounds/header-3.jpg'; ?>');">
+          </div>
        </div>
        <div class="item">
-            <!-- Set the third background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/backgrounds/header-4.jpg'; ?>');"></div>
+          <!-- Set the fourth background image using inline CSS below. -->
+          <div class="fill" style="background-image:url('<?php print base_path() 
+            . drupal_get_path('theme', 'opc_theme') .  '/assets/images/backgrounds/header-4.jpg'; ?>');">
+          </div>
        </div>
        <div class="item">
-            <!-- Set the third background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/backgrounds/header-3.jpg'; ?>');"></div>
+          <!-- Set the fifth background image using inline CSS below. -->
+          <div class="fill" style="background-image:url('<?php print base_path() 
+            . drupal_get_path('theme', 'opc_theme') .  '/assets/images/backgrounds/header-3.jpg'; ?>');">
+          </div>
        </div>
        <div class="item">
-            <!-- Set the third background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/backgrounds/header-3.jpg'; ?>');"></div>
+          <!-- Set the sixth background image using inline CSS below. -->
+          <div class="fill" style="background-image:url('<?php print base_path() 
+            . drupal_get_path('theme', 'opc_theme') .  '/assets/images/backgrounds/header-3.jpg'; ?>');">
+          </div>
        </div>
        <div class="doverlay"></div>
     </div> 
@@ -267,15 +280,14 @@
             </div>
           </div>
           <div class="row">
-              <div class="col-sm-6">
+            <div class="col-sm-6">
+              <h3 class="section-sub-title">About Us</h3>
 
-                  <h3 class="section-sub-title">About Us</h3>
+              <p>You've inspired new consumer, racked up click-thru's, blown-up brand enes. We can't give you back the weekends you worked, or erase the pain ebeing forced to make the logo bigger. But if you submit your best work we ajusts might be able to give the chance to show you best digital marketing.</p>
 
-                  <p>You've inspired new consumer, racked up click-thru's, blown-up brand enes. We can't give you back the weekends you worked, or erase the pain ebeing forced to make the logo bigger. But if you submit your best work we ajusts might be able to give the chance to show you best digital marketing.</p>
-
-                  <figure>
-                      <img alt="" class="img-responsive" src="<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/about-us.jpg'; ?>">
-                  </figure>
+                <figure>
+                    <img alt="" class="img-responsive" src="<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/about-us.jpg'; ?>">
+                </figure>
 
               </div><!-- /.col-sm-6 -->
 
@@ -1677,17 +1689,26 @@
         <div class="row">
           <div class="col-sm-3">
               <a href="">
-                <img class="img-responsive" src="<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/sponsors/1.png'; ?>">
+                <img class="img-responsive" 
+                  src="<?php print base_path() 
+                  . drupal_get_path('theme', 'opc_theme') 
+                  . '/assets/images/sponsors/1.png'; ?>">
               </a>
           </div>
           <div class="col-sm-3">
                <a href="">
-                <img class="img-responsive" src="<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/sponsors/2.png'; ?>">
+                <img class="img-responsive" 
+                  src="<?php print base_path() 
+                  . drupal_get_path('theme', 'opc_theme') 
+                  . '/assets/images/sponsors/2.png'; ?>">
               </a>
           </div>
           <div class="col-sm-3">
                <a href="">
-                <img class="img-responsive" src="<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/sponsors/3.png'; ?>">
+                <img class="img-responsive" 
+                  src="<?php print base_path() 
+                  . drupal_get_path('theme', 'opc_theme') 
+                  . '/assets/images/sponsors/3.png'; ?>">
               </a>
           </div>
           <div class="col-sm-3">
@@ -1699,9 +1720,8 @@
 
         <div class="row">
           <div class="col-sm-3">
-               <a href="">
-                <img class="img-responsive" src="<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/sponsors/5.png'; ?>">
-              </a>
+          
+            <a href=""><img class="img-responsive" src="<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/sponsors/5.png'; ?>"></a>
           </div>
           <div class="col-sm-3">
                <a href="">
