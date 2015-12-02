@@ -31,3 +31,10 @@
 - fixing theme-settings.php
 - adding image upload in animate slideshow
 
+***01 December 2015 13:00***
+- removing social media links for footer tag in theme-settings.php (footer section).
+- removing theme credit information in theme-settings.php (footer section).
+
+***01 December 2015 15:31***
+- change the footer tag margin from 50px 0px to 0px 0px !important.
+- change the site footer class padding from 15px 0px to 10px 0px !important

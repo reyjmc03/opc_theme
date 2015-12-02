@@ -216,7 +216,6 @@
         <li data-target="#myCarousel" data-slide-to="5"></li>
         <li data-target="#myCarousel" data-slide-to="6"></li>
     </ol> -->
-
     <!-- Wrapper for Slides -->
     <div class="carousel-inner">
         <div class="item active">
@@ -255,9 +254,10 @@
             . drupal_get_path('theme', 'opc_theme') .  '/assets/images/backgrounds/header-3.jpg'; ?>');">
           </div>
        </div>
-       <div class="doverlay"></div>
+       <div class="doverlay">
+         
+       </div>
     </div> 
-
     <!-- Controls -->
     <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="icon-prev"></span></a>
     <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="icon-next"></span></a> -->
@@ -1678,7 +1678,7 @@
           #################################################################################### ?>
     <?php if (theme_get_setting('show_sponsorship_section')): ?>
      <section id="sponsors" class="section partner">
-      <br><br>
+      <br><br><br><br>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -1688,40 +1688,44 @@
 
         <div class="row">
           <div class="col-sm-3">
-              <a href="">
-                <img class="img-responsive" 
-                  src="<?php print base_path() 
-                  . drupal_get_path('theme', 'opc_theme') 
-                  . '/assets/images/sponsors/1.png'; ?>">
-              </a>
+            <a href="">
+              <img class="img-responsive" 
+                src="<?php print base_path() 
+                . drupal_get_path('theme', 'opc_theme') 
+                . '/assets/images/sponsors/1.png'; ?>">
+            </a>
           </div>
           <div class="col-sm-3">
-               <a href="">
-                <img class="img-responsive" 
-                  src="<?php print base_path() 
-                  . drupal_get_path('theme', 'opc_theme') 
-                  . '/assets/images/sponsors/2.png'; ?>">
-              </a>
+            <a href="">
+              <img class="img-responsive" 
+                src="<?php print base_path() 
+                . drupal_get_path('theme', 'opc_theme') 
+                . '/assets/images/sponsors/2.png'; ?>">
+            </a>
           </div>
           <div class="col-sm-3">
-               <a href="">
-                <img class="img-responsive" 
-                  src="<?php print base_path() 
-                  . drupal_get_path('theme', 'opc_theme') 
-                  . '/assets/images/sponsors/3.png'; ?>">
-              </a>
+            <a href="">
+              <img class="img-responsive" 
+                src="<?php print base_path() 
+                . drupal_get_path('theme', 'opc_theme') 
+                . '/assets/images/sponsors/3.png'; ?>">
+            </a>
           </div>
           <div class="col-sm-3">
-               <a href="">
-                <img class="img-responsive" src="<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/sponsors/4.png'; ?>">
-              </a>
+            <a href="">
+              <img class="img-responsive" src="<?php print base_path() 
+              . drupal_get_path('theme', 'opc_theme') 
+              . '/assets/images/sponsors/4.png'; ?>">
+            </a>
           </div>
         </div>
 
         <div class="row">
           <div class="col-sm-3">
           
-            <a href=""><img class="img-responsive" src="<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/sponsors/5.png'; ?>"></a>
+            <a href=""><img class="img-responsive" src="<?php print base_path() 
+            . drupal_get_path('theme', 'opc_theme') 
+            . '/assets/images/sponsors/5.png'; ?>"></a>
           </div>
           <div class="col-sm-3">
                <a href="">
@@ -1753,9 +1757,7 @@
           #################################################################################### ?>
     <?php if ($page['sp_footer_first_col'] || $page['sp_footer_second_col'] || $page['sp_footer_third_col'] || $page['sp_footer_fourth_col']): ?>
     <?php $footer_col = ( 12 / ( (booL) $page['sp_footer_first_col'] + 
-                                 (bool) $page['sp_footer_second_col'] +  
-                                 (bool) $page['sp_footer_third_col'] + 
-                                 (bool) $page['sp_footer_fourth_col'] ) ); ?>
+      (bool) $page['sp_footer_second_col'] +  (bool) $page['sp_footer_third_col'] + (bool) $page['sp_footer_fourth_col'] ) ); ?>
     <section id="pre-footer" class="section pre-footer">
       <div class="container">
         <div class="row">
@@ -1811,8 +1813,6 @@
 <?php ###########################################################################################################################################
       # END CUSTOMIZED PAGE                                                                                                                     #
       ########################################################################################################################################### ?>
-
-
 
 
 

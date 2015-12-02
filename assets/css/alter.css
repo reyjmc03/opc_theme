@@ -79,6 +79,7 @@ hr {
                0px 18px 23px rgba(0,0,0,0.1);*/
 }
 
+
 .section-sub-title {
   font-size: 30px;
   font-family: 'Orbitron', sans-serif;
@@ -147,8 +148,12 @@ hr {
 }
 
 /* site footer */
+footer {
+  margin:0px 0px !important;
+}
+
 .site-footer {
-  padding: 15px 0px !important;
+  padding: 10px 0px !important;
 }
 
 .site-footer .site-info {
