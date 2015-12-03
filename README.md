@@ -38,3 +38,8 @@
 ***01 December 2015 15:31***
 - change the footer tag margin from 50px 0px to 0px 0px !important.
 - change the site footer class padding from 15px 0px to 10px 0px !important
+
+***03 December 2015 09:18***
+- updatind agenda page and sponsors page
+- updating alter.css
+
