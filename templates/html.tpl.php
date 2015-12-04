@@ -30,6 +30,9 @@
 	    	interval: 3000 //changes the speed
 	    });
 	    </script>	
+	    <script type="text/javascript" src="<?php print base_path() 
+	    	. drupal_get_path('theme', 'opc_theme') . '/bower_components/wowjs/wow.js'; ?>">
+			</script>	
 		<?php else: ?>
 			<script type="text/javascript" src="<?php print base_path() 
 				. drupal_get_path('theme', 'opc_theme') . '/bower_components/jquery/dist/jquery.min.js'; ?>">

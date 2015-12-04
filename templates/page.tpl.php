@@ -73,85 +73,77 @@
         #################################################################################### ?>
   <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
     <div class="container">
-        <div class="navbar-header">
-          <!-- logo -->
-          <div class="animated pulse">
-            <div class="site-branding">
-              <?php if ($logo): ?>
-                <a class="logo" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-                  <img class="img-responsive" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-                </a>
-              <?php endif; ?>
-            </div>
-          </div>
-
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-          </button>
-
-        </div><!-- /.navbar-header -->
-
-        <div class="collapse navbar-collapse" id="navbar-items">
-            <ul class="nav navbar-nav navbar-right">
-              <?php # agenda ?>
-              <?php if (theme_get_setting('show_agenda_section')):?>
-                <li><a data-scroll href="#agenda">Agenda</a></li>
-              <?php endif; ?>
-              <?php # registration ?>
-              <?php if (theme_get_setting('show_registration_section')): ?>
-                <li><a data-scroll href="#registration">Registration</a></li>
-              <?php endif; ?>
-              <?php # schedule ?>
-              <?php if (theme_get_setting('show_schedule_section')): ?>
-                <li><a data-scroll href="#schedule">Schedule</a></li>
-              <?php endif; ?>
-              <?php # location ?>
-              <?php if (theme_get_setting('show_location_section')): ?>
-                <li><a data-scroll href="#location">Location</a></li>
-              <?php endif; ?> 
-              <?php # faq ?>
-              <?php if (theme_get_setting('show_faq_section')):?>
-                <li><a data-scroll href="#faq">FAQ</a></li>
-              <?php endif; ?>
-              <?php # call for speakers ?>
-              <?php if (theme_get_setting('show_cfs_section')): ?>
-                <li><a data-scroll href="#cfs">Call for Speakers</a></li>
-              <?php endif; ?>
-              <?php # speakers ?>
-              <?php if (theme_get_setting('show_speakers_section')): ?>
-                <li><a data-scroll href="#speakers">Speakers</a></li>
-              <?php endif; ?>
-              <?php # sponsorship ?>
-              <?php if (theme_get_setting('show_sponsorship_section')): ?>
-                <li><a data-scroll href="#sponsors">Sponsors</a></li>
-              <?php endif; ?>
-
-              <li><a data-scroll href="">About</a></li>
-
-                <!-- <li><a data-scroll href="#partner">Partner</a></li> -->
-                <!-- <li><a data-scroll href="#photos">Photos</a></li> -->
-            </ul>
-
-            <?php if ($main_menu): ?>
-              <div id="main-menu" class="navigation">
-                <?php print theme('links__system_main_menu', array(
-                  'links' => $main_menu,
-                  'attributes' => array(
-                    'id' => 'main-menu-links',
-                    'class' => array('nav navbar-nav', 'navbar-right'),
-                  ), 
-                  'heading' => array(
-                    'text' => t('Main menu'),
-                    'level' => 'h2',
-                    'class' => array('element-invisible'),
-                  ),
-                )); ?>
-              </div> <!-- /#main-menu -->
+      <div class="navbar-header">
+        <!-- logo -->
+        <div class="animated pulse">
+          <div class="site-branding">
+            <?php if ($logo): ?>
+              <a class="logo" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+                <img class="img-responsive" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+              </a>
             <?php endif; ?>
+          </div>
         </div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+      </div><!-- /.navbar-header -->
+
+      <?php if ($main_menu): ?>
+        <?php print theme('links__system_main_menu', array(
+          'links' => $main_menu,
+          'attributes' => array(
+            'id' => 'main-menu-links',
+            'class' => array('nav navbar-nav', 'navbar-right'),
+          ), 
+          'heading' => array(
+            'text' => t('Main menu'),
+            'level' => 'h2',
+            'class' => array('element-invisible'),
+          ),
+        )); ?>
+      <?php endif; ?>
+
+      <ul class="nav navbar-nav navbar-right">
+        <?php # agenda ?>
+        <?php if (theme_get_setting('show_agenda_section')):?>
+          <li><a data-scroll href="#agenda">Agenda</a></li>
+        <?php endif; ?>
+        <?php # registration ?>
+        <?php if (theme_get_setting('show_registration_section')): ?>
+          <li><a data-scroll href="#registration">Registration</a></li>
+        <?php endif; ?>
+        <?php # schedule ?>
+        <?php if (theme_get_setting('show_schedule_section')): ?>
+          <li><a data-scroll href="#schedule">Schedule</a></li>
+        <?php endif; ?>
+        <?php # location ?>
+        <?php if (theme_get_setting('show_location_section')): ?>
+          <li><a data-scroll href="#location">Location</a></li>
+        <?php endif; ?> 
+        <?php # faq ?>
+        <?php if (theme_get_setting('show_faq_section')):?>
+          <li><a data-scroll href="#faq">FAQ</a></li>
+        <?php endif; ?>
+        <?php # call for speakers ?>
+        <?php if (theme_get_setting('show_cfs_section')): ?>
+          <li><a data-scroll href="#cfs">Call for Speakers</a></li>
+        <?php endif; ?>
+        <?php # speakers ?>
+        <?php if (theme_get_setting('show_speakers_section')): ?>
+          <li><a data-scroll href="#speakers">Speakers</a></li>
+        <?php endif; ?>
+        <?php # sponsorship ?>
+        <?php if (theme_get_setting('show_sponsorship_section')): ?>
+          <li><a data-scroll href="#sponsors">Sponsors</a></li>
+        <?php endif; ?>
+      </ul>
+
+            
+      </div>
     </div><!-- /.container -->
   </nav>
   <?php ####################################################################################
@@ -276,7 +268,9 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <h3 class="section-title">Agenda</h3>
+          <div class="WOW pulse">
+            <h3 class="section-title">Agenda</h3>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -766,8 +760,6 @@
           <ul class="nav nav-tabs" role="tablist">
             <li class="active"><a data-toggle="tab" href="#day1"><h4 class="event-schedule-header-tab">DAY 1</h4></a></li>
             <li><a data-toggle="tab" href="#day2"><h4 class="event-schedule-header-tab">DAY 2</h4></a></li>
-            <li><a data-toggle="tab" href="#day3"><h4 class="event-schedule-header-tab">DAY 3</h4></a></li>
-            <li><a data-toggle="tab" href="#day3"><h4 class="event-schedule-header-tab">DAY 4</h4></a></li>
           </ul>
           <div class="tab-content">
             <?php # begin schedule > day 1 ?>
@@ -963,7 +955,6 @@
                 <div id="googleMap">
                 </div>
                 <div id="google_map">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96706.50013548559!2d-78.9870674333782!3d40.76030630398601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sbd!4v1436299406518" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
                 <div id="over_map">
                   <address>
@@ -1125,7 +1116,9 @@
             <div class="col-md-3">
                 <div class="speaker">
                     <figure>
-                        <img alt="" class="speaker-img img-responsive center-block" src="<?php print base_path() . drupal_get_path('theme', 'opc_theme') . '/images/owasp_logo.jpg'; ?>">
+                        <img alt="" class="speaker-img img-responsive center-block" src="<?php print base_path() 
+                        . drupal_get_path('theme', 'opc_theme') 
+                        . '/images/owasp_logo.jpg'; ?>">
                     </figure>
 
                     <h4>Jhon Smith</h4>
@@ -1135,19 +1128,27 @@
                     <ul class="social-block">
                       <li><a href="">
                         <!--  <i class="ion-social-twitter"></i> -->
-                        <img class="img-responsive" src="<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/social_media/twitter.png'; ?>">
+                        <img class="img-responsive" src="<?php print base_path() 
+                        . drupal_get_path('theme', 'opc_theme') 
+                        . '/assets/images/social_media/twitter.png'; ?>">
                       </a></li>
                       <li><a href="">
                         <!-- <i class="ion-social-facebook"></i> -->
-                        <img class="img-responsive" src="<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/social_media/fb.png'; ?>">
+                        <img class="img-responsive" src="<?php print base_path() 
+                        . drupal_get_path('theme', 'opc_theme') 
+                        . '/assets/images/social_media/fb.png'; ?>">
                       </a></li>
                       <li><a href="">
                         <!-- <i class="ion-social-linkedin-outline"></i> -->
-                        <img class="img-responsive" src="<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/social_media/linkedin.png'; ?>">
+                        <img class="img-responsive" src="<?php print base_path() 
+                        . drupal_get_path('theme', 'opc_theme') 
+                        . '/assets/images/social_media/linkedin.png'; ?>">
                       </a></li>
                       <li><a href="">
                         <!-- <i class="ion-social-googleplus"></i> -->
-                        <img class="img-responsive" src="<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/social_media/google+.png'; ?>">
+                        <img class="img-responsive" src="<?php print base_path() 
+                        . drupal_get_path('theme', 'opc_theme') 
+                        . '/assets/images/social_media/google+.png'; ?>">
                       </a></li>
                     </ul>
 
@@ -1156,10 +1157,11 @@
 
             <div class="col-md-3">
                 <div class="speaker">
-
-                    <figure>
-                        <img alt="" class="speaker-img img-responsive center-block" src="<?php print base_path() . drupal_get_path('theme', 'opc_theme') . '/images/owasp_logo.jpg'; ?>">
-                    </figure>
+                  <figure>
+                    <img alt="" class="speaker-img img-responsive center-block" src="<?php print base_path() 
+                    . drupal_get_path('theme', 'opc_theme') 
+                    . '/images/owasp_logo.jpg'; ?>">
+                  </figure>
 
                     <h4>Jhon Smith</h4>
 
@@ -1168,19 +1170,27 @@
                     <ul class="social-block">
                       <li><a href="">
                         <!--  <i class="ion-social-twitter"></i> -->
-                        <img class="img-responsive" src="<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/social_media/twitter.png'; ?>">
+                        <img class="img-responsive" src="<?php print base_path() 
+                        . drupal_get_path('theme', 'opc_theme') 
+                        . '/assets/images/social_media/twitter.png'; ?>">
                       </a></li>
                       <li><a href="">
                         <!-- <i class="ion-social-facebook"></i> -->
-                        <img class="img-responsive" src="<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/social_media/fb.png'; ?>">
+                        <img class="img-responsive" src="<?php print base_path() 
+                        . drupal_get_path('theme', 'opc_theme') 
+                        . '/assets/images/social_media/fb.png'; ?>">
                       </a></li>
                       <li><a href="">
                         <!-- <i class="ion-social-linkedin-outline"></i> -->
-                        <img class="img-responsive" src="<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/social_media/linkedin.png'; ?>">
+                        <img class="img-responsive" src="<?php print base_path() 
+                        . drupal_get_path('theme', 'opc_theme') 
+                        . '/assets/images/social_media/linkedin.png'; ?>">
                       </a></li>
                       <li><a href="">
                         <!-- <i class="ion-social-googleplus"></i> -->
-                        <img class="img-responsive" src="<?php print base_path() . drupal_get_path('theme', 'opc_theme') .  '/assets/images/social_media/google+.png'; ?>">
+                        <img class="img-responsive" src="<?php print base_path() 
+                        . drupal_get_path('theme', 'opc_theme') 
+                        . '/assets/images/social_media/google+.png'; ?>">
                       </a></li>
                     </ul>
 
@@ -1190,7 +1200,9 @@
             <div class="col-md-3">
                 <div class="speaker">
                     <figure>
-                        <img alt="" class="speaker-img img-responsive center-block" src="<?php print base_path() . drupal_get_path('theme', 'opc_theme') . '/images/owasp_logo.jpg'; ?>">
+                        <img alt="" class="speaker-img img-responsive center-block" src="<?php print base_path() 
+                        . drupal_get_path('theme', 'opc_theme') 
+                        . '/images/owasp_logo.jpg'; ?>">
                     </figure>
 
                     <h4>Jhon Smith</h4>
@@ -1794,78 +1806,9 @@
     <?php #################################################################################### 
           # end sponsors                                                                     #
           #################################################################################### ?>
-
-
-
-    <?php ####################################################################################
-          # begin pre footer section                                                         # 
-          #################################################################################### ?>
-    <?php if ($page['sp_footer_first_col'] || $page['sp_footer_second_col'] || $page['sp_footer_third_col'] || $page['sp_footer_fourth_col']): ?>
-    <?php $footer_col = ( 12 / ( (booL) $page['sp_footer_first_col'] + 
-      (bool) $page['sp_footer_second_col'] +  (bool) $page['sp_footer_third_col'] + (bool) $page['sp_footer_fourth_col'] ) ); ?>
-    <section id="pre-footer" class="section pre-footer">
-      <div class="container">
-        <div class="row">
-          <?php if ($page['sp_footer_first_col']): ?>
-            <div class="footer-block col-sm-<?php print $footer_col; ?>">
-              <?php print render ($page['sp_footer_first_col']); ?>
-            </div>
-          <?php endif; ?>
-          <?php if ($page['sp_footer_second_col']): ?>
-            <div class="footer-block col-sm-<?php print $footer_col; ?>">
-              <?php print render ($page['sp_footer_second_col']); ?>
-            </div>
-          <?php endif; ?>
-          <?php if ($page['sp_footer_third_col']): ?>
-            <div class="footer-block col-sm-<?php print $footer_col; ?>">
-              <?php print render ($page['sp_footer_third_col']); ?>
-            </div>
-          <?php endif; ?>
-          <?php if ($page['sp_footer_fourth_col']): ?>
-            <div class="footer-block col-sm-<?php print $footer_col; ?>">
-              <?php print render ($page['sp_footer_fourth_col']); ?>
-            </div>
-          <?php endif; ?>
-        </div>
-      </div>
-    </section>
-    <?php endif; ?>
-    <?php ####################################################################################
-          # end pre fiiter section                                                           #
-          #################################################################################### ?>
-     
-    <?php ####################################################################################
-          # begin footer section                                                             #
-          #################################################################################### ?>
-    <?php if (theme_get_setting('show_footer_section')): ?>
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <?php # copyright information ?>
-            <p class="site-info" style="text-align:center;">
-              &copy; <?php echo date("Y"); ?>, <?php print check_plain(theme_get_setting('copyright_holder')) . ". " . "All Rights Reserved." ?>
-            </p>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <?php endif; ?>
-    <?php ####################################################################################
-          # end footer section                                                               #
-          #################################################################################### ?>
 <?php ###########################################################################################################################################
       # END CUSTOMIZED PAGE                                                                                                                     #
       ########################################################################################################################################### ?>
-
-
-
-
-
-
-
-
 <?php else: ?>
 <?php ###########################################################################################################################################
       # BEGIN DRUPAL DYNAMIC PAGE CONTENT                                                                                                       #
@@ -1932,51 +1875,118 @@
 <?php ####################################################################################
       # end navigation                                                                   #
       #################################################################################### ?>
-<div class="container" style="padding-top:100px;">
-  <div class="row">
-    <div class="col-sm-12">
-      <?php //print render($page['header']); ?>
-      <?php
-      # messages   #
-      ############## ?>
-      <?php if ($messages): ?>
-      <div id="messages"><div class="section clearfix">
-        <?php print $messages; ?>
-      </div></div> <!-- /.section, /#messages -->
-      <?php endif; ?>
-      <?php
-      ##############
-      # ./messages #  ?>
+<section id="content" class="section content">
+  <br><br><br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <?php //print render($page['header']); ?>
+        <?php
+        # messages   #
+        ############## ?>
+        <?php if ($messages): ?>
+        <div id="messages"><div class="section clearfix">
+          <?php print $messages; ?>
+        </div></div> <!-- /.section, /#messages -->
+        <?php endif; ?>
+        <?php
+        ##############
+        # ./messages #  ?>
 
-      <?php //if ($page['highlighted']): ?><!-- <div id="highlighted"> --><?php //print render($page['highlighted']); ?><!-- </div> --><?php //endif; ?>
-      <!-- <a id="main-content"></a> -->
-      <?php //print render($title_prefix); ?>
-      <?php //if ($title): ?>
-       <!--  <h1 class="title" id="page-title"> -->
-          <?php //print $title; ?>
-       <!--  </h1> -->
-      <?php //endif; ?>
-
-       <?php print render($title_suffix); ?>
-        <?php if ($tabs): ?>
-          <div class="tabs">
-            <?php print render($tabs); ?>
-          </div>
+        <?php //if ($page['highlighted']): ?><!-- <div id="highlighted"> --><?php //print render($page['highlighted']); ?><!-- </div> --><?php //endif; ?>
+        <!-- <a id="main-content"></a> -->
+        <?php //print render($title_prefix); ?>
+        <?php if ($title): ?>
+         <h3 class="section-title">
+            <?php print $title; ?>
+         </h3>
         <?php endif; ?>
 
-        <?php print render($page['help']); ?>
-        <?php if ($action_links): ?>
-          <ul class="action-links">
-            <?php print render($action_links); ?>
-          </ul>
-        <?php endif; ?>
+         <?php print render($title_suffix); ?>
+          <?php if ($tabs): ?>
+            <div class="tabs">
+              <?php print render($tabs); ?>
+            </div>
+          <?php endif; ?>
 
-        <?php print render($page['content']); ?>
-        <?php print $feed_icons; ?>
+          <?php print render($page['help']); ?>
+          <?php if ($action_links): ?>
+            <ul class="action-links">
+              <?php print render($action_links); ?>
+            </ul>
+          <?php endif; ?>
+
+          <?php print render($page['content']); ?>
+          <?php print $feed_icons; ?>
+      </div>
     </div>
   </div>
-</div>
+</section>
 <?php ###########################################################################################################################################
       # END DRUPAL DYNAMIC PAGE CONTENT                                                                                                         #
       ########################################################################################################################################### ?>
 <?php endif; ?>
+
+
+
+<?php ####################################################################################
+      # begin pre footer block                                                           #
+      #################################################################################### ?>
+<?php if ($page['footer_firstcolumn'] || $page['footer_secondcolumn'] || $page['footer_thirdcolumn'] || $page['footer_fourthcolumn']): ?>
+<?php 
+  $footer_col = ( 12 / ( (booL) $page['footer_firstcolumn'] + 
+    (bool) $page['footer_secondcolumn'] +  
+    (bool) $page['footer_thirdcolumn'] + 
+    (bool) $page['footer_fourthcolumn'] ) ); 
+?>
+<section id="pre-footer" class="section pre-footer">
+  <div class="container">
+    <div class="row">
+      <?php if ($page['footer_firstcolumn']): ?>
+        <div class="footer-block col-sm-<?php print $footer_col; ?>">
+          <?php print render($page['footer_firstcolumn']); ?>
+        </div>
+      <?php endif; ?>
+      <?php if ($page['footer_secondcolumn']): ?>
+        <div class="footer-block col-sm-<?php print $footer_col; ?>">
+          <?php print render($page['footer_secondcolumn']); ?>
+        </div>
+      <?php endif; ?>
+      <?php if ($page['footer_thirdcolumn']): ?>
+        <div class="footer-block col-sm-<?php print $footer_col; ?>">
+          <?php print render($page['footer_thirdcolumn']); ?>
+        </div>
+      <?php endif; ?>
+      <?php if ($page['footer_fourthcolumn']): ?>
+        <div class="footer-block col-sm-<?php print $footer_col; ?>">
+          <?php print render($page['footer_fourthcolumn']); ?>
+        </div>
+      <?php endif; ?>
+    </div>
+  </div>
+</section>
+<?php endif; ?>
+<?php ####################################################################################
+      # end pre footer block                                                             #
+      #################################################################################### ?>
+<?php ####################################################################################
+      # begin footer section                                                             #
+      #################################################################################### ?>
+<?php if (theme_get_setting('show_footer_section')): ?>
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <?php # copyright information ?>
+        <p class="site-info" style="text-align:center;">
+          &copy; <?php echo date("Y"); ?>, <?php print check_plain(theme_get_setting('copyright_holder')) . ". " . "All Rights Reserved." ?>
+        </p>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<?php endif; ?>
+<?php ####################################################################################
+      # end footer section                                                               #
+      #################################################################################### ?>
