@@ -13,11 +13,13 @@ core = 7.x
 ; ###########################################################
 stylesheets[all][] = bower_components/bootstrap/dist/css/bootstrap.css
 stylesheets[all][] = bower_components/ionicons/css/ionicons.min.css
+;stylesheets[all][] = bower_components/normalize/normalize.css
 stylesheets[all][] = assets/css/alter.css
 stylesheets[all][] = assets/css/main.css
 stylesheets[all][] = assets/css/animate.css
 stylesheets[all][] = assets/css/admin-module.css
 stylesheets[all][] = assets/css/full-slider.css
+stylesheets[all][] = assets/css/round-about.css
 ;stylesheets[print][] = css/print.css
 
 ; ###########################################################
@@ -45,11 +47,20 @@ regions[footer_fourthcolumn] = Footer fourth column
 
 regions[footer] = Footer
 
+regions[header_section]   = SECTION HEADER
+regions[agenda_section]   = SECTION AGENDA BLOCK
+regions[schedule_section] = SECTION EVENT SCHEDULE BLOCK
+regions[location_section] = SECTION EVENT LOCATION BLOCK
+regions[sponsors_section] = SECTION SPONSORS BLOCK
+regions[speakers_section] = SECTION SPEAKERS BLOCK
+
+
 ; ###########################################################
 ; # Settings
 ; ###########################################################
 ; header, agenda, registration, call for speakers, schedule, location, faq, speakers
 settings[show _header_intro] = 1
+settings[used_slideshow] = 0
 settings[show_agenda_section] = 1
 settings[show_registration_section] = 1
 settings[show_schedule_section] = 1
@@ -59,12 +70,6 @@ settings[show_cfs_section] = 1
 settings[show_speakers_section] = 1
 settings[show_sponsorship_section] = 1
 
-
-; settings['show_social_media'] = 1
-;settings['show_twit'] = 1
-;settings['show_fb'] = 1
-;settings['show_li'] = 1
-;settings['show_gplus'] = 1
 
 settings[show_footer_section] = 1
 settings[show_theme_credit] = 0

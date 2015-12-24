@@ -34,36 +34,6 @@ function opc_theme_form_system_theme_settings_alter(&$form, &$form_state) {
 		'#default_value' => theme_get_setting('show_header_intro'),
 		'#description' => t("Check this opation to Header Introdunction Section. Uncheck to hide"),
 	);
-  # lead in textbox
-  $form['opc_theme']['header']['intro_lead_in'] = array(
-    '#type' => 'textfield',
-    '#title' => t('Lead In Introduction'),
-    '#default_value' => theme_get_setting('intro_lead_in'),
-  );
-  # intro heading textbox
-  $form['opc_theme']['header']['intro_heading'] = array(
-    '#type' => 'textfield',
-    '#title' => t('Heading Introduction'),
-    '#default_value' => theme_get_setting('intro_heading'),
-  );
-  # intro description
-  // $form['opc_theme']['header']['intro_desc'] = array(
-  //   '#type' => 'text_format',
-  //   '#title' => t('Introduction Description'),
-  //   '#default_value' => theme_get_setting('intro_desc'),
-  // );
-  # date of  the event
-  $form['opc_theme']['header']['date_of_the_event'] = array(
-    '#type' => 'textfield',
-    '#title' => t('Date of the event'),
-    '#default_value' => theme_get_setting('date_of_event'),
-  );
-  # venue of the event
-  $form['opc_theme']['header']['venue_for_the_event'] = array(
-    '#type' => 'textfield',
-    '#title' => t('Venue for the event'),
-    '#default_value' => theme_get_setting('venue_for_the_event'),
-  );
 
   # ### slider image information ###
   $form['opc_theme']['header']['slideshow'] = array(
@@ -202,8 +172,8 @@ function opc_theme_form_system_theme_settings_alter(&$form, &$form_state) {
  	);
   
   ##########################################################################################
-   # location section
-   ##########################################################################################
+  # location section
+  ##########################################################################################
    $form['opc_theme']['location'] = array(
     '#type' => 'fieldset',
     '#title' => t('<b>Location Section Settings</b>'),
@@ -224,7 +194,7 @@ function opc_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type' => 'fieldset',
     '#title' => t('<b>Call for speakers and speakers settings</b>'),
     '#collapsible' => TRUE, // FOR BUTTON
-    '#collapsed' => TRUE, // FOR FORM
+    '#collapsed' => FALSE, // FOR FORM
    );
 
    $form['opc_theme']['speakers_cfs']['show_cfs_section'] = array(
@@ -240,6 +210,13 @@ function opc_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#default_value' => theme_get_setting('show_speakers_section'),
     '#description' => t('Check this option to Speakers Section. Uncheck to hide.'),
     );
+
+    // $form['opc_theme']['speakers_cfs']['speakers_html'] = array(
+    //   '#type' => 'text_format',
+    //   '#title' => t('place your html markup here.'),
+    //   '#default_value' => check_markup(theme_get_setting('speakers_html')),
+    //   '#format' => 'full_html',
+    //);
 
 
    // $form['opc_theme']['speakers_cfs']['speakers'] = array(

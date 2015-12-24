@@ -330,7 +330,7 @@ ul li {
 
 .site-branding {
   float: left;
-  margin-top: 0;
+  margin-top: 5px !important;
   margin-left: 10px;
 }
 .site-branding .logo {
@@ -368,8 +368,8 @@ ul li {
 .site-header .intro {
   color: #fff;
   position: relative;
-  text-align: center;
-  text-transform: uppercase;
+  /*text-align: center;*/
+  /*text-transform: uppercase;*/
   width: 100%;
   z-index: 1;
   padding: 0 15px;
@@ -396,7 +396,7 @@ ul li {
   }
 
   .site-branding {
-    margin-top: 6px;
+   /* margin-top: -15px;*/
     margin-left: 0;
   }
 }
@@ -432,7 +432,7 @@ ul li {
 .speaker {
   text-align: center;
   color: #313131;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   margin: 25px 0;
 }
 .speaker h4 {

@@ -106,6 +106,16 @@ function opc_theme_process_maintenance_page(&$variables) {
 }
 
 /**
+ * Override or insert variables into the block template.
+ */
+function opc_theme_preprocess_block(&$variables) {
+  // In the header region visually hide block titles.
+  if ($variables['block']->region == 'header') {
+    $variables['title_attributes_array']['class'][] = 'element-invisible';
+  }
+}
+
+/**
  * Override or insert variables into the node template.
  */
 function opc_theme_preprocess_node(&$variables) {
@@ -115,14 +125,124 @@ function opc_theme_preprocess_node(&$variables) {
 }
 
 /**
- * Override or insert variables into the block template.
+ * Override or insert variables into the page template.
+ *
+ * @param $variables
+ *   An array of variables to pass to the theme template.
+ * @param $hook
+ *   The name of the template being rendered ("page" in this case.)
  */
-function opc_theme_preprocess_block(&$variables) {
-  // In the header region visually hide block titles.
-  if ($variables['block']->region == 'header') {
-    $variables['title_attributes_array']['class'][] = 'element-invisible';
+function opc_theme_preprocess_page(&$variables, $hook) {
+   
+  # $$$$$$$$$$$$$$$$$$$$$$$$$$$
+  # $ begin for slide 1 image $
+  # $$$$$$$$$$$$$$$$$$$$$$$$$$$ 
+  $variables['slide1_image_styles'] = 'style=" ';
+  $slide1_fid = theme_get_setting('slide1_image');
+  if($slide1_fid){
+    $file = file_load($slide1_fid);
+    if(isset($file->uri)){
+      $variables['slide1_image_styles'] .= 'background-image: url('.file_create_url($file->uri).'); ';
+    }
   }
+  else {
+    $variables['slide1_image_styles'] .= 'background-image: url(sites/all/themes/opc_theme/images/placeholder_image1.png);';
+  }
+  $variables['slide1_image_styles'] .= '" ';
+
+  # $$$$$$$$$$$$$$$$$$$$$$$$$$$
+  # $ begin for slide 2 image $
+  # $$$$$$$$$$$$$$$$$$$$$$$$$$$
+  $variables['slide2_image_styles'] = 'style=" ';
+  $slide1_fid = theme_get_setting('slide2_image');
+  if($slide1_fid){
+    $file = file_load($slide1_fid);
+    if(isset($file->uri)){
+      $variables['slide2_image_styles'] .= 'background-image: url('.file_create_url($file->uri).'); ';
+    }
+  }
+  else {
+    $variables['slide2_image_styles'] .= 'background-image: url(sites/all/themes/opc_theme/images/placeholder_image1.png);';
+  }
+  $variables['slide2_image_styles'] .= '" ';
+
+  # $$$$$$$$$$$$$$$$$$$$$$$$$$$
+  # $ begin for slide 3 image $
+  # $$$$$$$$$$$$$$$$$$$$$$$$$$$ 
+  $variables['slide3_image_styles'] = 'style=" ';
+  $slide1_fid = theme_get_setting('slide3_image');
+  if($slide1_fid){
+    $file = file_load($slide1_fid);
+    if(isset($file->uri)){
+      $variables['slide3_image_styles'] .= 'background-image: url('.file_create_url($file->uri).'); ';
+    }
+  }
+  else {
+    $variables['slide3_image_styles'] .= 'background-image: url(sites/all/themes/opc_theme/images/placeholder_image1.png);';
+  }
+  $variables['slide3_image_styles'] .= '" ';
+
+  # $$$$$$$$$$$$$$$$$$$$$$$$$$$
+  # $ begin for slide 4 image $
+  # $$$$$$$$$$$$$$$$$$$$$$$$$$$ 
+  $variables['slide4_image_styles'] = 'style=" ';
+  $slide1_fid = theme_get_setting('slide4_image');
+  if($slide1_fid){
+    $file = file_load($slide1_fid);
+    if(isset($file->uri)){
+      $variables['slide4_image_styles'] .= 'background-image: url('.file_create_url($file->uri).'); ';
+    }
+  }
+  else {
+    $variables['slide4_image_styles'] .= 'background-image: url(sites/all/themes/opc_theme/images/placeholder_image1.png);';
+  }
+  $variables['slide4_image_styles'] .= '" ';
+
+  # $$$$$$$$$$$$$$$$$$$$$$$$$$$
+  # $ begin for slide 5 image $
+  # $$$$$$$$$$$$$$$$$$$$$$$$$$$ 
+  $variables['slide5_image_styles'] = 'style=" ';
+  $slide1_fid = theme_get_setting('slide5_image');
+  if($slide1_fid){
+    $file = file_load($slide1_fid);
+    if(isset($file->uri)){
+      $variables['slide5_image_styles'] .= 'background-image: url('.file_create_url($file->uri).'); ';
+    }
+  }
+  else {
+    $variables['slide5_image_styles'] .= 'background-image: url(sites/all/themes/opc_theme/images/placeholder_image1.png);';
+  }
+  $variables['slide5_image_styles'] .= '" ';
+
+  # $$$$$$$$$$$$$$$$$$$$$$$$$$$
+  # $ begin for slide 1 blank $
+  # $$$$$$$$$$$$$$$$$$$$$$$$$$$ 
+  $variables['slide1_blank_styles'] = 'style="';
+  $variables['slide1_blank_styles'] .= 'background-image: url(sites/all/themes/opc_theme/images/placeholder_image1.png);';
+  $variables['slide1_blank_styles'] .= '"';
 }
+
+
+
+/**
+ * opc_theme edit
+ */
+/**
+ * theme override of link main menu
+ */
+// function opc_theme_main_menu($variables) {
+//   $output  = '';
+//   $output .= "  <ul>\n";
+
+//   foreach ($variables['links'] as $link) {
+//     $output .= "<li>" . l($link['title'], $link['href'], $link) . "</li>";
+//   }
+
+//   $output .= "  </ul>\n";
+
+//   return $output;
+// }
+
 
 /**
  * Implements theme_menu_tree().

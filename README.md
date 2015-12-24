@@ -48,3 +48,8 @@
 - adding "call for papers" and "contact us" page
 - updating sponsors section
 
+***25 December 2015 05:09***
+- adding call for papers image folder
+- adding streetview map for location link
+- updating owasp appsec conference theme for drupal website
+
